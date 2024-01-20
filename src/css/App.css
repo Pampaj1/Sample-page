@@ -14,4 +14,6 @@
 
 *{
   font-family: inter;
+  overflow: hidden;
+  overflow-y: visible;
 }
