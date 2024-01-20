@@ -47,7 +47,7 @@ function Navbar() {
       </div>
       <ul className='text-[#B9BAA3] font-light flex text-xl gap-8 max-[1000px]:hidden'>
         {navLinks.map((link) => (
-          <li className='cursor-pointer hover:text-white'>{link.title}</li>
+          <li className='cursor-pointer transition-all ease-in-out duration-300 hover:text-white'>{link.title}</li>
         ))}
       </ul>
       <div className='min-[1000px]:hidden max-[1000px]:block cursor-pointer'>
@@ -60,8 +60,9 @@ function Navbar() {
 
 function MainSecion() {
   return (
-    <section className='w-[100vw] h-[60vh]' style={{backgroundImage: `url(${background})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center"}}>
-
+    <section className='w-[100vw] h-[60vh] flex flex-col justify-center items-center text-center' style={{backgroundImage: `url(${background})`, backgroundRepeat: "no-repeat", backgroundSize: "cover", backgroundPosition: "center"}}>
+      <h2 className='font-bold text-white text-5xl tracking-[1.5rem] mb-20 max-[1200px]:text-3xl max-[570px]:tracking-[.5rem]'>DETAILING SAMOCHODOWY</h2>
+      <button className='bg-[#B9BAA3] w-[250px] h-[60px] text-xl font-bold text-[#0A0A0A] rounded-xl mb-20 transition-all ease-in-out duration-300 hover:text-white'>ZADZWOŃ DO NAS</button>
     </section>
   )
 }
