@@ -16,4 +16,5 @@
   font-family: inter;
   overflow: hidden;
   overflow-y: visible;
+  scroll-behavior: smooth;
 }
