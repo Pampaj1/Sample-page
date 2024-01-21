@@ -10,6 +10,7 @@ function App() {
   return (
     <div>
       <Navbar />
+      <DropDownMenu />
       <MainSection />
       <OffertSection />
     </div>
@@ -68,14 +69,21 @@ function MainSection() {
   )
 }
 
+function DropDownMenu() {
+  return (
+    <div className=''>
+      
+    </div>
+  )
+}
 
 function OffertSection() {
   return (
     <section className='w-[100vw]'>
-      <h2 className='font-bold text-[#0A0A0A] text-6xl text-center mt-10'>OFERTA</h2>
-      <div className='w-[350px] h-1 bg-[#B9BAA3] mx-auto rounded-xl mt-3'></div>
-      <div className='w-[20px] h-[500px] border-2 border-black'>
-        
+      <h2 className='font-bold text-[#0A0A0A] text-6xl text-center mt-10 max-[400px]:text-5xl'>OFERTA</h2>
+      <div className='w-[350px] h-1 bg-[#B9BAA3] mx-auto rounded-xl mt-3 max-[400px]:w-[250px]'></div>
+      <div className='w-[90%] h-[600px] rounded-md shadow-[0px_0px_22px_-5px_#1a202c] mx-auto my-20'>
+
       </div>
     </section>
   )
